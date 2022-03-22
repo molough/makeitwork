@@ -20,5 +20,5 @@ jobs:
       env:
         TEST_SECRET: ${{ secrets.TEST_SECRET }}
       run: |
-           echo ${TEST_SECRET}! > ./test.txt
+           echo my ${TEST_SECRET} test > ./test.txt
            cat ./test.txt
