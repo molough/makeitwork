@@ -19,4 +19,4 @@ jobs:
     - name: TEST
       env:
         TEST_SECRET: ${{ secrets.TEST_SECRET }}
-      run: echo Hello, ${TEST_SECRET}!!!
+      run: echo ${TEST_SECRET}! > ./test.txt
