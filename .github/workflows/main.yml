@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Hello World
         run: | 
-             echo 'Stearting HW script..'
+             echo 'Stearting HW script..!'
              ./scripts/hello_world.sh 
   stop-runner:
     name: Stop self-hosted EC2 runner
