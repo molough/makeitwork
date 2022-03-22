@@ -16,4 +16,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
     steps:
-      - run: echo Hello, world 2!!!
+    - name: TEST
+      env:
+        TEST_SECRET: ${{ secrets.TEST_SECRET }}
+      run: echo Hello, ${TEST_SECRET}!!!
