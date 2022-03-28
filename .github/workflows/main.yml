@@ -20,5 +20,5 @@ jobs:
     container: tensorflow/tensorflow:2.5.0-gpu-jupyter
     steps:
       - uses: actions/checkout@v2
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Execute Tensorflow check
+        run: python -c "import tensorflow as tf; print(tf.test.is_gpu_available())"
