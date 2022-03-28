@@ -22,3 +22,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Execute Tensorflow check
         run: python -c "import tensorflow as tf; print(tf.test.is_gpu_available())"
+
+
+
