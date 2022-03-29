@@ -16,11 +16,10 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    runs-on: self-hosted
-    
-    container: tensorflow/tensorflow:2.5.0-gpu-jupyter
-      options:|  
-        --gpus all
+    runs-on: self-hosted 
+    container: 
+      image: tensorflow/tensorflow:2.5.0-gpu-jupyter
+      options: --gpus all
         
     steps:
       - uses: actions/checkout@v2
