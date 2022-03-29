@@ -17,8 +17,11 @@ on:
 jobs:
   build:
     runs-on: self-hosted
+    
     container: tensorflow/tensorflow:2.5.0-gpu-jupyter
-      options: --gpus all
+      options:|  
+        --gpus all
+        
     steps:
       - uses: actions/checkout@v2
       - name: Execute Tensorflow check
